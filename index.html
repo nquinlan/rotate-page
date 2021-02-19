@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <head>
+    <title>Rotate Bookmarklets</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+      }
+      .bookmarklet {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #92C4FF;
+        color: #666;
+        padding: 3px 10px;
+        border-radius: 10px;
+      }
+      main {
+          max-width: 500px;
+          margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Rotate Page</h1>
+      <p>
+        Ever load an image that needs to be rotated? These bookmarklets rotate the page for you, entirely securely and within browser.
+      </p>
+      <p>
+        Drag these three icons to your URL bar to install them. <a href="https://www.howtogeek.com/189358/beginner-geek-how-to-use-bookmarklets-on-any-device/">More information can be found here</a>.
+      </p>
+      <div>
+        <a class="bookmarklet" title="90° Counter Clockwise" href='javascript:document.body.setAttribute( "style", "-webkit-transform: rotate(-90deg);");'>⟲</a>
+        <a class="bookmarklet" title="180°" href='javascript:document.body.setAttribute( "style", "-webkit-transform: rotate(180deg);");'>⥀</a>
+        <a class="bookmarklet" title="90° Clockwise" href='javascript:document.body.setAttribute( "style", "-webkit-transform: rotate(90deg);");'>⟳</a>
+      </div>
+      <p>
+        &copy; Nick Quinlan 2021 - MIT / Beerware Dual License<br>
+        Built for VITA Volunteers with 💛
+      </p>
+      <p>
+        <small>Tested on Chrome Latest</small>
+      </p>
+    </main>
+    <script>
+      document.querySelectorAll(".bookmarklet").forEach(function (e) {
+        e.addEventListener("click", function (event) {
+          event.preventDefault();
+          alert("Drag this to your URL bar.");
+          return false;
+        }, false);
+      })
+    </script>
+  </body>
+</html>
