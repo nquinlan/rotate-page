@@ -4,6 +4,14 @@
   <meta charset="utf-8">
   <head>
     <title>Rotate Bookmarklets</title>
+    <meta property="description" content="Bookmarklets for rotating images.">
+    <meta property="og:title" content="Rotate Bookmarklets">
+    <meta property="og:description" content="Bookmarklets for rotating images.">
+    <meta property="og:image" content="https://github.com/nquinlan/rotate-page/demo.gif">
+    <meta property="og:url" content="https://github.com/nquinlan/rotate-page/">
+    <meta name="twitter:title" content="Rotate Bookmarklets">
+    <meta name="twitter:description" content="Bookmarklets for rotating images.">
+    <meta name="twitter:image" content="https://github.com/nquinlan/rotate-page/demo.gif">
     <style>
       body {
         font-family: Georgia, serif;
@@ -25,24 +33,27 @@
   <body>
     <main>
       <h1>Rotate Page</h1>
-      <p>
-        Ever load an image that needs to be rotated? These bookmarklets rotate the page for you, entirely securely and within browser.
-      </p>
-      <p>
-        Drag these three icons to your URL bar to install them. <a href="https://www.howtogeek.com/189358/beginner-geek-how-to-use-bookmarklets-on-any-device/">More information can be found here</a>.
-      </p>
       <div>
         <a class="bookmarklet" title="90° Counter Clockwise" href='javascript:document.body.setAttribute( "style", "-webkit-transform: rotate(-90deg);");'>⟲</a>
         <a class="bookmarklet" title="180°" href='javascript:document.body.setAttribute( "style", "-webkit-transform: rotate(180deg);");'>⥀</a>
         <a class="bookmarklet" title="90° Clockwise" href='javascript:document.body.setAttribute( "style", "-webkit-transform: rotate(90deg);");'>⟳</a>
       </div>
       <p>
+        Ever load an image that needs to be rotated? These bookmarklets rotate the page for you, entirely securely and within browser.
+      </p>
+      <p>
+        Drag these three icons to your bookmarks bar to install them. <a href="https://www.howtogeek.com/189358/beginner-geek-how-to-use-bookmarklets-on-any-device/">More information on how can be found here</a>.
+      </p>
+      <p>
         &copy; Nick Quinlan 2021 - MIT / Beerware Dual License<br>
         Built for VITA Volunteers with 💛
       </p>
       <p>
-        <small>Tested on Chrome Latest</small>
+        <small>Tested on Chrome Latest. Code available on <a href="https://github.com/nquinlan/rotate-page">GitHub</a> or by viewing source.</small>
       </p>
+      <div>
+        <img src="demo.gif" alt="Image Rotation Demo">
+      </div>
     </main>
     <script>
       document.querySelectorAll(".bookmarklet").forEach(function (e) {
